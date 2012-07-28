@@ -18,7 +18,7 @@ endif(WIN32)
 # do this after QScintilla - it generates tons of warnings
 if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUCXX)
     set(WARNING_FLAGS "-Wall -Wextra")
-    set(CMAKE_CXX_FLAGS "-std=c++0x ${WARNING_FLAGS} ${CMAKE_CXX_FLAGS}")
+    set(CMAKE_CXX_FLAGS "-std=gnu++0x ${WARNING_FLAGS} ${CMAKE_CXX_FLAGS}")
     set(CMAKE_C_FLAGS "${WARNING_FLAGS} ${CMAKE_C_FLAGS}")
 endif()
 
